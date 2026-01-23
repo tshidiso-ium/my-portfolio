@@ -27,30 +27,11 @@ export default function Contact() {
     } 
   };
 
-//     const handleSubmit = async (e) => {
-//     e.preventDefault();
-//     setButtonText("Sending...");
-    
-//     let response = await fetch("https://profileserver-bxz33grd4a-uc.a.run.app/sendMessage", {
-//       method: "POST",
-//       headers: {
-//         "Content-Type": "application/json",
-//       },
-//       body: JSON.stringify(formDetails),
-//     });
-//     setButtonText("Send");
-//     setFormDetails(formInitialDetails);
-//     if (response.status == 200) {
-//       setModalShow(true);
-//     } else {
-//       setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-//     }
-//   };
-
-
   return (
-    <section id="contact" className="py-20 px-6 bg-zinc-50 dark:bg-zinc-900">
-      <div className="max-w-2xl mx-auto text-center">
+    <section id="contact" className="pb-20 px-6 bg-zinc-50 dark:bg-zinc-900 relative">
+            {/* Ndebele pattern background */}
+      {/* <div className="absolute top-0 left-0 w-full h-[10%] sm:max-h-0 opacity-100 bg-[url('https://firebasestorage.googleapis.com/v0/b/my-profile-95716.firebasestorage.app/o/bg-ndebele-1.png?alt=media&token=3b69864e-90d2-4c60-9ea1-ddc1b47d2675')] bg-repeat  border-t-4 border-t-blue-500 border-b-4 border-b-blue-500" /> */}
+      <div className="max-w-2xl mx-auto text-center pt-[10%]">
         <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
         <p className="text-zinc-600 dark:text-zinc-300 mb-10">
           Have a project or opportunity in mind? I'd love to hear from you.

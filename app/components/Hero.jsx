@@ -1,13 +1,13 @@
 export default function Hero() {
   return (
     <>
-    <div className="z-10 bg-[url('https://firebasestorage.googleapis.com/v0/b/my-profile-95716.firebasestorage.app/o/bg-ndebele-1.png?alt=media&token=3b69864e-90d2-4c60-9ea1-ddc1b47d2675')] bg-repeat  border-t-8 border-t-blue-500 border-b-8 border-b-blue-500">
+    <div className="z-10 bg-[url('https://firebasestorage.googleapis.com/v0/b/my-profile-95716.firebasestorage.app/o/bg-ndebele-1.png?alt=media&token=3b69864e-90d2-4c60-9ea1-ddc1b47d2675')] bg-repeat  border-t-4 border-t-blue-500 border-b-4 border-b-blue-500">
     <div className="backdrop-blur-sm" >
     <div className="z-20 pt-32 px-6 text-center max-w-4xl mx-auto py-20">
       <h1 className="text-4xl sm:text-6xl font-extrabold leading-tight mb-4 text-white">
-        Building fast, scalable web experiences ⚡️
+        Building fast, scalable web experiences
       </h1>
-      <p className="text-lg text-white dark:text-zinc-400 mb-6">
+      <p className="text-lg text-white dark:text-white mb-6">
         Full-stack developer with 3+ years of experience in React, Node.js, and cloud-native tools.
       </p>
       <div className="flex justify-center gap-4">

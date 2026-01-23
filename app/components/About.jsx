@@ -4,47 +4,62 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FaCalendarAlt } from 'react-icons/fa';
+import WindowSize from "../modules/windowSize";
 
 const timeline = [
   {
-    year: '2020',
-    title: 'Graduated with BSc in Computer Science',
+    year: '2021',
+    title: 'Graduated with BSc in Computer Science (IIE Varsity College)',
     description: 'Completed studies with a focus on web development, databases, and software engineering principles.',
   },
   {
-    year: '2021',
-    title: 'Joined Tech Startup as Junior Developer',
-    description: 'Worked on frontend and backend tasks using React, Node.js, and PostgreSQL.',
-  },
-  {
     year: '2022',
-    title: 'Promoted to Full-Stack Developer',
-    description: 'Led feature development across the stack; introduced testing and CI/CD processes.',
+    title: 'Junior Developer (Syscor.ai)',
+    description:
+      'Worked on full-stack development and monday.com integrations at Syscor.ai, delivering custom workflow and automation solutions using React, Node.js, and PostgreSQL.',
   },
   {
     year: '2023',
-    title: 'AWS Certified Developer – Associate',
-    description: 'Achieved cloud certification and began integrating AWS services into full-stack apps.',
+    title: 'Monday.com Developer Certificate (Syscor.ai)',
+    description:
+      'I earned my monday.com Developer Certificate, deepening my expertise in building custom apps and integrations on the monday.com platform.',
   },
   {
     year: '2024',
-    title: 'Freelanced on SaaS and startup projects',
-    description: 'Delivered MVPs and production apps for international clients.',
+    title: 'Junior Full-Stack Developer (Alpha Insure)',
+    description:
+      'Recruited by Alpha Insure to join their engineering team as a full-stack developer, contributing to end-to-end feature development, improving system reliability, and collaborating closely with product and business stakeholders.',
   },
+  {
+    year: '2025',
+    title: 'Promoted to Mid-level Full-Stack Developer (Alpha Insure)',
+    description: 'Led feature development across the stack; introduced testing and CI/CD processes.',
+  },
+  // {
+  //   year: '2026',
+  //   title: 'AWS Certified Developer – Associate',
+  //   description: 'Achieved cloud certification and began integrating AWS services into full-stack apps.',
+  // },
+  // {
+  //   year: '2026',
+  //   title: 'Freelanced on SaaS and startup projects',
+  //   description: 'Delivered MVPs and production apps for international clients.',
+  // },
 ];
-
-const highlights = ['React', 'Next.js', 'TypeScript', 'DevOps', 'AWS Certified', 'UI/UX Design', 'Docker'];
+// /'AWS Certified',
+const highlights = ['React', 'Next.js', 'TypeScript', 'DevOps',  'UI/UX Design', 'Docker'];
 
 export default function About() {
+  const deviceWidth = WindowSize();
   return (
-    <section id="about" className="py-20 px-6 relative overflow-hidden ">
+    <section id="about" className="py-5 lg:py-20 lg:px-6 relative overflow-hidden ">
       {/* Ndebele pattern background */}
-      <div className="absolute top-0 left-0 w-full h-full opacity-100 bg-[url('https://firebasestorage.googleapis.com/v0/b/my-profile-95716.firebasestorage.app/o/bg-ndebele-1.png?alt=media&token=3b69864e-90d2-4c60-9ea1-ddc1b47d2675')] bg-repeat  border-t-8 border-t-blue-500 border-b-8 border-b-blue-500" />
+      {/* <div className={`absolute top-0 left-0 w-full ${deviceWidth.width < 720 ? 'max-h-[5%] border-t-2 border-b-2' : 'h-[10%]'}  opacity-100 bg-[url('https://firebasestorage.googleapis.com/v0/b/my-profile-95716.firebasestorage.app/o/bg-ndebele-1.png?alt=media&token=3b69864e-90d2-4c60-9ea1-ddc1b47d2675')] bg-repeat  border-t-8 border-t-blue-500 border-b-8 border-b-blue-500`} /> */}
 
-      <div className="max-w-full relative z-10 mx-[10%]">
-        <h2 className="text-5xl font-bold mb-10 text-center text-white backdrop-blur-lg">About Me</h2>
+      <div className={`max-w-full relative lg:mx-[10%]`}>
+        <h2 className="text-3xl font-bold lg:mb-12 mb-6 text-center">About Me</h2>
 
-        <div className="flex flex-col md:flex-row items-center gap-10 mb-16 backdrop-blur-md w-full p-10">
+        <div className="flex flex-col md:flex-row items-center gap-10 mb-16  w-full p-10">
           {/* Photo */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -53,13 +68,14 @@ export default function About() {
             viewport={{ once: true }}
             className="flex-shrink-0"
           >
-            <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white dark:border-zinc-300">
+            <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-zinc-500 dark:border-zinc-700">
               <Image
-                src="/profile.jpg"
+                src="https://firebasestorage.googleapis.com/v0/b/my-profile-95716.firebasestorage.app/o/me.jpeg?alt=media&token=7534e79e-1d94-4c34-8e20-15f83d806f02"
                 alt="Tshidiso Modiko"
                 width={160}
                 height={160}
                 className="object-cover w-full h-full"
+                priority
               />
             </div>
           </motion.div>
@@ -70,7 +86,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
-            className="text-zinc-200 dark:text-zinc-300 text-base"
+            className="text-zinc-700 dark:text-zinc-300 text-base"
           >
             <p className="mb-4">
               I'm a full-stack developer with a passion for solving complex problems with clean, maintainable code.
@@ -88,7 +104,7 @@ export default function About() {
               ))}
             </p>
             <a
-              href="/resume.pdf"
+              href="https://firebasestorage.googleapis.com/v0/b/my-profile-95716.firebasestorage.app/o/TSHIDISO%20ISHMAEL%20MODIKO.pdf?alt=media&token=b1120ffb-b8fc-4bf2-8e73-070b9b7e9423"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-4 px-6 py-2 border border-zinc-200 dark:border-zinc-200 text-sm rounded hover:scale-105 dark:scale-105 transition"
@@ -104,7 +120,7 @@ export default function About() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="space-y-6 border-l border-zinc-300 dark:border-zinc-600 p-10 backdrop-blur-md"
+          className="space-y-6 border-zinc-300 dark:border-zinc-600 p-10 lg:mx-[15%] lg:pl-10"
         >
           {timeline.map((item, idx) => (
             <div key={idx} className="relative pl-2">
@@ -118,6 +134,7 @@ export default function About() {
             </div>
           ))}
         </motion.div>
+
       </div>
     </section>
   );

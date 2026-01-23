@@ -2,7 +2,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { FaReact, FaNodeJs, FaAws, FaDocker, FaFigma } from 'react-icons/fa';
-import { SiNextdotjs, SiTailwindcss, SiMongodb, SiPostgresql, SiTypescript, SiJest, SiGithubactions, SiEslint, SiPrettier } from 'react-icons/si';
+import { SiNextdotjs, SiTailwindcss, SiMongodb, SiPostgresql, SiTypescript, SiJest, SiGithubactions, SiEslint, SiPrettier, SiFirebase } from 'react-icons/si';
 
 const skillGroups = [
   {
@@ -31,6 +31,7 @@ const skillGroups = [
       { name: 'Docker', icon: <FaDocker />, level: 'Intermediate' },
       { name: 'AWS', icon: <FaAws />, level: 'Intermediate' },
       { name: 'Vercel', icon: <span>▲</span>, level: 'Advanced' },
+            { name: 'Firebase', icon: <SiFirebase />, level: 'Advanced' },
       { name: 'GitHub Actions', icon: <SiGithubactions />, level: 'Intermediate' },
     ],
   },
