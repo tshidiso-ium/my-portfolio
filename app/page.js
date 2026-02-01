@@ -25,17 +25,17 @@ export default function Home() {
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tshidisomodiko.com/" />
+        <meta property="og:url" content="https://www.tshidisomodiko.com/" />
         <meta property="og:title" content="Tshidiso Modiko | Full-Stack Developer" />
         <meta property="og:description" content="Creating modern, scalable web applications with Next.js, React, Node.js, and cloud-native tooling." />
-        <meta property="og:image" content="https://tshidisomodiko.com/og-image.png" />
+        <meta property="og:image" content="https://www.tshidisomodiko.com/og-image.png" />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://tshidisomodiko.com/" />
+        <meta property="twitter:url" content="https://www.tshidisomodiko.com/" />
         <meta property="twitter:title" content="Tshidiso Modiko | Full-Stack Developer" />
         <meta property="twitter:description" content="Building fast, elegant, and scalable full-stack applications using the modern JavaScript ecosystem." />
-        <meta property="twitter:image" content="https://tshidisomodiko.com/og-image.png" />
+        <meta property="twitter:image" content="https://www.tshidisomodiko.com/og-image.png" />
 
         {/* <!-- Favicon --> */}
         <link rel="icon" href="/favicon.ico" />
@@ -43,7 +43,7 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest" />
 
         {/* <!-- Canonical Link --> */}
-        <link rel="canonical" href="https://tshidisomodiko.com/" />
+        <link rel="canonical" href="https://www.tshidisomodiko.com/" />
 
         {/* <!-- Robots --> */}
         <meta name="robots" content="index, follow" />

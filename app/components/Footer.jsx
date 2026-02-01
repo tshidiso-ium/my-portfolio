@@ -51,14 +51,14 @@ export default function Footer() {
           </a>
 
           {/* Fiverr */}
-          <a
+          {/* <a
             href="https://www.fiverr.com/tshidiso_modiko"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-1 hover:text-emerald-400 hover:scale-110 transition-transform"
           >
             <SiFiverr className="h-5 w-5" />
-          </a>
+          </a> */}
         </div>
       </div>
     </footer>

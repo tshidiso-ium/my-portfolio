@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://tshidisomodiko.com";
+const siteUrl = "https://www.tshidisomodiko.com";
 
 export const metadata = {
  title: "Tshidiso Modiko | Full-Stack Developer",
@@ -75,10 +75,10 @@ export const metadata = {
       name: "Tshidiso Modiko",
       url: siteUrl,
       jobTitle: "Full-Stack Developer",
-      image: `${siteUrl}/profile.jpg`,
+      image: `https://firebasestorage.googleapis.com/v0/b/my-profile-95716.firebasestorage.app/o/me.jpeg?alt=media&token=7534e79e-1d94-4c34-8e20-15f83d806f02`,
       sameAs: [
-        "https://github.com/YOUR_GITHUB",
-        "https://www.linkedin.com/in/YOUR_LINKEDIN"
+        "https://github.com/tshidiso-ium",
+        "https://www.linkedin.com/in/tshidiso-modiko-a63400212"
       ],
       knowsAbout: [
         "React",
