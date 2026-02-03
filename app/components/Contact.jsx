@@ -32,9 +32,9 @@ export default function Contact() {
             {/* Ndebele pattern background */}
       {/* <div className="absolute top-0 left-0 w-full h-[10%] sm:max-h-0 opacity-100 bg-[url('https://firebasestorage.googleapis.com/v0/b/my-profile-95716.firebasestorage.app/o/bg-ndebele-1.png?alt=media&token=3b69864e-90d2-4c60-9ea1-ddc1b47d2675')] bg-repeat  border-t-4 border-t-blue-500 border-b-4 border-b-blue-500" /> */}
       <div className="max-w-2xl mx-auto text-center pt-[10%]">
-        <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
+        <h2 className="text-3xl font-bold mb-6">{`Contact Me`}</h2>
         <p className="text-zinc-600 dark:text-zinc-300 mb-10">
-          Have a project or opportunity in mind? I'd love to hear from you.
+          {`Have a project or opportunity in mind? I'd love to hear from you.`}
         </p>
 
         {!submitted ? (
@@ -47,7 +47,7 @@ export default function Contact() {
             className="grid gap-4 text-left"
           >
             <div>
-              <label htmlFor="name" className="block text-sm mb-1">Name</label>
+              <label htmlFor="name" className="block text-sm mb-1">{`Name`}</label>
               <input
                 type="text"
                 id="name"
@@ -59,7 +59,7 @@ export default function Contact() {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm mb-1">Email</label>
+              <label htmlFor="email" className="block text-sm mb-1">{`Email`}</label>
               <input
                 type="email"
                 id="email"
@@ -71,7 +71,7 @@ export default function Contact() {
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm mb-1">Message</label>
+              <label htmlFor="message" className="block text-sm mb-1">{`Message`}</label>
               <textarea
                 id="message"
                 name="message"
@@ -84,9 +84,9 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="mt-4 px-6 py-2 bg-black text-white dark:bg-white dark:text-black rounded hover:opacity-90 transition"
+              className="cursor-pointer mt-4 px-6 py-2 bg-black text-white dark:bg-white dark:text-black rounded hover:opacity-90 transition"
             >
-              Send Message
+              {`Send Message`}
             </button>
           </motion.form>
         ) : (
