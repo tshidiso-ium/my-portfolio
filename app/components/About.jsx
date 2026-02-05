@@ -89,12 +89,12 @@ export default function About() {
             className="text-zinc-700 dark:text-zinc-300 text-base"
           >
             <p className="mb-4">
-              I'm a full-stack developer with a passion for solving complex problems with clean, maintainable code.
-              I thrive on bringing digital ideas to life with <strong>React</strong>, <strong>Next.js</strong>, and cloud-native tools.
+{`              I'm a full-stack developer with a passion for solving complex problems with clean, maintainable code.
+              I thrive on bringing digital ideas to life with <strong>React</strong>, <strong>Next.js</strong>, and cloud-native tools.`}
             </p>
             <p className="mb-4">
-              Over the years, I've built everything from internal tools to public SaaS products, focusing on performance,
-              scalability, and great user experience.
+{`              Over the years, I've built everything from internal tools to public SaaS products, focusing on performance,
+              scalability, and great user experience.`}
             </p>
             <p className="mb-4">
               Highlights: {highlights.map((h, i) => (
